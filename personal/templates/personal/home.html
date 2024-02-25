@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% comment %} <p style="color:green;">این شروع مطلب همان بلاک کانتنت می باشد</p> {% endcomment %}
+
+{% comment %} {% include "personal\body_snippet.html" %} {% endcomment %}
+
+{% for account in accounts %}
+    <p>{{account.username}}</p>
+{% endfor %}
+
+
+{% comment %} <p style="color:green;">این پایان مطلب همان بلاک کانتنت می باشد</p> {% endcomment %}
+
+{% endblock content %}
